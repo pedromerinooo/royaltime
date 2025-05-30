@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoyalTime - Relojes de Lujo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf3;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    header img.logo {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    .hero {
+      background: url('hero-watch.jpg') center/cover no-repeat;
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      padding: 100px 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .product {
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      width: 260px;
+    }
+    .product img {
+      width: 100%;
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    .product strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+    form input, form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #000;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #000;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo RoyalTime" class="logo" />
+  </header>
+  <div class="hero">
+    Exclusividad suiza, <br />alma valenciana
+  </div>
+  <div class="container">
+    <section id="quienes">
+      <h2>Quiénes somos</h2>
+      <p>
+        RoyalTime nace de la unión entre la relojería suiza y la pasión española. Nos dedicamos a importar componentes de alta calidad desde Suiza y exportar relojes de lujo a mercados exclusivos como Emiratos Árabes. Nuestra visión es ser un referente europeo de elegancia, precisión y sostenibilidad.
+      </p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo de productos</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="reloj1.png" alt="Royal Classic" />
+          <h3>Royal Classic</h3>
+          <p>Reloj clásico con movimiento suizo y caja de acero.</p>
+          <strong>5.000 €</strong>
+        </div>
+        <div class="product">
+          <img src="reloj2.png" alt="Royal Gold" />
+          <h3>Royal Gold</h3>
+          <p>Diseño dorado exclusivo, cristal de zafiro.</p>
+          <strong>7.500 €</strong>
+        </div>
+        <div class="product">
+          <img src="reloj3.png" alt="Royal Elite" />
+          <h3>Royal Elite</h3>
+          <p>Edición limitada, correa de piel italiana.</p>
+          <strong>10.000 €</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form action="https://formspree.io/f/moqgjzyp" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 RoyalTime. Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram y TikTok: @_RoyalTime_</p>
+  </footer>
+</body>
+</html>
